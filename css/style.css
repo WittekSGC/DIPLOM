@@ -54,6 +54,14 @@
     font-family: "Open Sans", serif;
 }
 
+i.far, i.fas, i.fa {
+    font-family: "Font Awesome 5 Free" !important;
+}
+
+ i.fab {
+    font-family: "Font Awesome 5 Brands" !important;
+ }
+
 .container {
     width: 100%;
     max-width: 1140px;
@@ -1441,13 +1449,14 @@ section.statistic .container {
 /*SINGLE*****************************************************/
 .single .container {
     display: flex;
-    flex-wrap: wrap;
     margin: 80px auto;
+    flex-wrap: wrap;
 }
 
 .single .p-lr-15 {
     padding-left: 15px;
     padding-right: 15px;
+    box-sizing: border-box;
 }
 
 .single .left {
@@ -1458,10 +1467,355 @@ section.statistic .container {
     width: 66.667%;
 }
 
-.single .recents-post {
+/*left*/
+.single .post {
     border: 5px solid #F5F5F5;
     box-sizing: border-box;
-    height: 300px;
+    padding: 32px;
+    margin-bottom: 48px;
+}
+
+.single .post * {
+    font-family: 'Lato';
+}
+
+.single .post .title {
+    margin-bottom: 32px;
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 20px;
+
+}
+
+.single .post .item:last-child {
+    margin-bottom: 0px;
+}
+
+.single .recents .item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 32px;
+}
+
+.single .recents .item img{
+    width: 30%;
+}
+
+.single .recents .item .info {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+}
+
+.single .recents .item .info .meta,
+.single .recents .item .info .meta>div{
+    display: flex;
+}
+
+.single .recents .item .info .meta {
+    justify-content: space-between;
+}
+
+.single .recents .item .name {
+    text-transform: capitalize;
+    color: #212121;
+    font-size: 18px;
+    margin-bottom: 6px;
+}
+
+.single .recents .item .meta .brief {
+    width: 30%;
+}
+
+.single .recents .item .meta .time {
+    width: 60%;
+}
+
+.single .recents .item .meta .icon {
+    margin-right: 8px;
+    font-size: 14px;
+    color: #ff9900;
+}
+
+.single .recents .item .meta .counter {
+    font-family: "Open Sans";
+    font-size: 14px;
+    color: #999999;
+}
+
+.single .twitter .item {
+    display: flex;
+    margin-bottom: 32px;
+}
+
+.single .twitter .item .icon {
+    margin-right: 8px;
+    font-family: 'OpenSans-Italic';
+    font-weight: lighter;
+    color: #ff9900;
+    line-height: 2em;
+}
+
+.single .twitter .item i.date,
+.single .twitter .item p {
+    color: #999999;
+    line-height: 2em;
+    font-size: 14px;
+}
+
+.single .twitter .item i.date,
+.single .twitter .item p a{
+    color: #212121;
+}
+
+.single .tags .items {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.single .tags .item {
+    display: flex;
+    padding: 4px 14px;
+    background-color: #f5f5f5;
+    margin-right: 12px;
+    margin-bottom: 8px;
+}
+
+.single .tags .item a {
+    font-size: 14px;
+    color: #212121;
+    font-family: 'Open Sans';
+}
+
+/*right*/
+.single .meta-info {
+    display: flex;
+}
+
+.single .meta-info>div {
+    display: flex;
+    margin-right: 32px;
+    font-size: 14px;
+    color: #212121;
+}
+
+.single .meta-info .icon {
+    margin-right: 16px;
+}
+
+.single .right * {
+    font-size: 14px;
+    line-height: 2em;
+}
+
+.single .right h3{
+    margin: 40px 0;
+    padding-left: 32px;
+    box-sizing: border-box;
+    border-left: 5px solid #ff9900;
+    font-size: 22px;
+    line-height: 1.8em;
+    color: #212121;
+    font-weight: 500;
+}
+
+.single .right .w100 {
+    width: 100%;
+    display: flex;
+}
+
+.single .right .content {
+    margin: 28px 0;
+    color: #999999;
+}
+
+.single .right .content i {
+    display: block;
+    margin: 14px 0;
+    color: #212121;
+}
+
+.single .right .content-row {
+    display: flex;
+    margin: 28px 0;
+    width: 100%;
+}
+
+.single .right .content-row .text,
+.single .right .content-row img,
+.single .right .content-row .left,
+.single .right .content-row .right {
+    width: 50%;
+    color: #999999;
+}
+
+.single .right .content-row span {
+    display: block;
+    margin-top: 14px;
+}
+
+.single .right .content-row .left img {
+    width: 100%;
+    display: flex;
+}
+
+.single .right .content-row p{
+    background-color: #f5f5f5;
+}
+
+.single .right .content-row .left p {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 16px;
+}
+
+.single .right .content-row .right {
+    height: auto;
+    display: flex;
+    align-content: center;
+}
+
+.single .right .content-row .right p {
+    padding: 32px 32px 32px 64px;
+    margin: auto;
+    position: relative;
+    color: #212121;
+}
+
+.single .right .content-row .right p::before {
+    content: '';
+    background-image: url(../img/ps2.png);
+    background-size: 100% 100%;
+    width: 20px;
+    height: 14px;
+    position: absolute;
+    z-index: 1;
+    left: 24px;
+    top: 36px;
+}
+
+/*comments*/
+.single .comments {
+    margin: 80px 0;
+    width: 100%;
+}
+
+.single .comments .com-item {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 32px;
+}
+
+.single .comments .com-item:last-child {
+    margin-bottom: 0px;
+}
+
+.single .comments h4{
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    font-weight: normal;
+    font-size: 28px;
+}
+
+.single .comments .img {
+    width: 15%;
+}
+
+.single .comments .img img {
+    height: 100%;
+    max-height: 100px;
+    border-radius: 50%;
+}
+
+.single .comments .text {
+    width: 80%;
+}
+
+.single .comments .com-item h5 {
+    font-size: 20px;
+}
+
+.single .comments .com-item .date,
+.single .comments .com-item p{
+    color: #999999;
+}
+
+.single .comments .com-item .date {
+    font-size: 12px;
+    margin: 6px 0 12px;
+}
+
+.single .comments .com-item p {
+    width: 80%;
+    line-height: 2em;
+    margin-bottom: 14px;
+}
+
+.single .reply {
+    width: 100%;
+}
+
+.single .reply h3 {
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    font-weight: normal;
+    font-size: 28px;
+}
+
+.single .reply form {
+    width: 80%;
+}
+
+.single .reply form * {
+    font-size: 16px;
+}
+
+.single .reply form .cols {
+    display: flex;
+}
+
+.single .reply form .col {
+    width: 50%;
+    padding-right: 32px;
+}
+
+.single .reply form .left input {
+    width:100%;
+    padding: 10px;
+}
+
+.single .reply form .left input:last-child {
+    margin-bottom: 0;
+}
+
+.single .reply form input,
+.single .reply form textarea {
+    border: 1px solid #E6E6E6;
+    color: #212121;
+    background-color: #F5F5F5;
+    margin-bottom: 14px;
+}
+
+.single .reply form input::placeholder,
+.single .reply form textarea::placeholder {
+    color: #212121;
+}
+
+.single .reply form textarea {
+    width: 100%;
+    height: 100%;
+    resize: none;
+    margin-bottom: 0;
+}
+
+.single .reply form .send-btn {
+    width:30%;
+    padding: 10px 0;
+    margin-top: 32px;
+    background-color: #FF9900;
+    color: #FFFFFF;
 }
 /************************************************************/
 /************************************************************/
