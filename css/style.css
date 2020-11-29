@@ -182,6 +182,10 @@ li {
     display: flex;
 }
 
+.contacts .icon i {
+    cursor: pointer;
+}
+
 .contacts .item-left .block .icon{
     border-radius: 8px;
     border: 1px solid #fff;
@@ -236,6 +240,56 @@ li {
     background: #000;
     transition: 1s;
     border-color: #000;
+}
+
+.contacts .container .search-bar {
+    background-color: #ffffff;
+    height: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 12px;
+}
+
+.contacts .search-bar input {
+    height: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: none;
+    box-shadow: inset rgba(160, 160, 160, 0.4) 0 1px 10px;
+    width: 250px;
+    border-radius: 2px;
+    outline: none;
+    margin-right: 12px;
+}
+
+.contacts .search-bar input::placeholder {
+    color: #212121;
+}
+
+.contacts .search-bar button {
+    height: 100%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border-radius: 2px;
+    background-color: #FF9900;
+    outline: none;
+}
+
+.contacts .container .search-bar {
+    display: none   ;
+}
+
+.contacts .search-bar .close {
+    height: 100%;
+    display: flex;
+    align-content: center;
+    margin-left: 8px;
+}
+
+.contacts .search-bar .close img {
+    height: 28px;
+    width: 28px;
+    margin: auto
 }
 /************************************************************/
 
@@ -364,6 +418,7 @@ li {
 .features .title {
     font-weight: 100;
     font-size: 28px;
+    margin-bottom: 7px;
 }
 
 /*left*/
@@ -376,10 +431,6 @@ li {
 
 .features .left>* {
     text-align: end;
-}
-
-.features .title {
-    margin-bottom: 7px;
 }
 
 .features .undertitle {
@@ -398,6 +449,7 @@ li {
 
 .features .button{
     width: 25%;
+    min-width: fit-content;
     border: 1px solid #000000;
     margin: 0 0 0 auto;
     text-align: center;
@@ -663,7 +715,7 @@ section.description .text .button:hover .icon{
 .news .item .content .text {
     color: #999999;
     font-size: 14px;
-    line-height: 28px;
+    line-height: 2em;
 }
 
 /*button*/
@@ -705,6 +757,7 @@ section.description .text .button:hover .icon{
     text-transform: uppercase;
     box-sizing: border-box;
     box-shadow: 0px 0px 2px #b0b0b0;
+    min-width: fit-content;
     width: 30%;
     text-align: center;
     padding: 16px 0;
@@ -1892,8 +1945,13 @@ section.statistic .container {
         width: auto;
     }
 
+    .border-header {
+        padding: 48px 0;
+    }
+
     .features .container {
         flex-wrap: wrap;
+        padding: 48px 0;
     }
 
     .features .container .block {
@@ -1933,8 +1991,13 @@ section.statistic .container {
         flex-wrap: wrap;
     }
 
+    footer .item.w15,
+    footer .item.w25,
+    footer .item.w30 {
+        width: 50%;
+    }
+
     footer .item {
-        width: 50% !important;
         box-sizing: border-box;
     }
 
@@ -1958,12 +2021,217 @@ section.statistic .container {
 
 
 @media all and (max-width:765px) {
+    .banner {
+        background-position: center;
+    }
+    
+    .contacts .item-left>div.search {
+        border-left: none;
+        padding: 0 24px 0 9px
+    }
+    
     .nav-links .toggle-button {
         display: flex;
     }
 
-    .nav-links .links {
+    .nav-bar .toggle-button {
+        display: flex;
+    }
+
+    .nav-bar .links {
         display: none;
     }
+
+    .news .item {
+        box-sizing: border-box;
+        margin-left: 48px;
+    }
+
+    .contacts .item-left>div {
+        display: none;
+    }
+    
+    .contacts .item-left>div.search {
+        display: flex;
+    }
 }
+
+@media all and (max-width:572px) {
+    .banner {
+        min-height: 350px;
+    }
+
+    .banner .middle {
+        padding: 24px;
+        box-sizing: border-box;
+    }
+
+    .banner .middle h2 {
+        font-size: 48px;
+    }
+
+    .copy .container {
+        flex-direction: column-reverse;
+    }
+
+    .copy .copy-info{
+        display: flex;
+        justify-content: center;
+    }
+
+    .copy .copy-info:first-child {
+        margin-top: 20px;
+    }
+
+    .copy .share .social img {
+        height: 18px;
+    }
+
+    .news .item {
+        margin-left: 24px;
+    }
+
+    .news .item .content {
+        margin: 0 24px;
+    }
+
+    .news .item .stats {
+        width: 70%;
+    }
+
+    .features .right .name {
+        margin: 20px auto 10px;
+        text-align: center;
+    }
+}
+
+@media all and (max-width:520px) {
+    .banner .middle{
+        margin-bottom: 0;
+    }
+
+    .testimonials .content{
+        padding: 24px;
+    }
+    
+    .testimonials .content .comment{
+        margin: 0;
+        padding: 0 32px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    footer .container {
+        flex-direction: column;
+    }
+
+    footer .item:nth-child(2n) {
+        border-left: none;
+    }
+
+    footer .item.w15,
+    footer .item.w25,
+    footer .item.w30
+    {
+        width: 100%;
+    }
+
+    footer .container .item:nth-child(1) {
+        border-bottom: 1px solid #999999;
+    }
+
+    footer .item {
+        padding-left: 15px;
+    }
+
+    footer .links {
+        padding-top: 24px;
+    }
+
+    .features .right .mask-box {
+        display: none;
+    }
+
+    section.description .text {
+        padding: 24px;
+    }
+
+    section.description .text .button {
+        margin-right: 0;
+        margin-left: auto;
+    }
+
+    .logo a {
+        font-size: 36px;
+    }
+
+    .nav-bar .toggle-button {
+        margin: 0;
+    }
+
+    .nav-bar {
+        padding: 12px;
+    }
+
+    .testimonials .pickers {
+        padding: 0;
+    }
+}
+
+@media all and (max-width:420px) {
+    .banner .container {
+        padding: 0;
+    }
+
+    .banner .middle {
+        width: auto;
+        padding: 24px 0;
+        box-sizing: border-box;
+        height: 100%;
+    }
+    
+    .banner .middle p {
+        margin: 14px 24px 24px;
+        line-height: 1.6em;
+    }
+
+    .banner .middle h2 {
+        font-size: 36px;
+    }
+
+    section.description .text .title {
+        line-height: 1.4em;
+    }
+
+    section.description .text .info {
+        line-height: 1.6em;
+    }
+
+    .news .item .content .text {
+        line-height: 1.8em;
+    }
+
+    .testimonials .content .comment {
+        font-size: 14px;
+    }
+
+    .copy .copy-info .text {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .copy .share .social img {
+        height: 14px;
+    }
+
+    .features .right .item {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-bar .container {
+        padding: 0;
+    }
+}
+
 /************************************************************/
