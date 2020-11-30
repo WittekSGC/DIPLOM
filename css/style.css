@@ -67,6 +67,7 @@ i.far, i.fas, i.fa {
     max-width: 1140px;
     padding: 0 15px;
     margin: 0 auto;
+    box-sizing: border-box;
 }
 
 a, a:hover, a:active, a:visited, a:checked{
@@ -128,9 +129,10 @@ li {
     text-transform: uppercase;
     box-sizing: border-box;
     box-shadow: 0px 0px 2px #b0b0b0;
+    min-width: fit-content;
     width: 30%;
     text-align: center;
-    padding: 16px 0;
+    padding: 16px;
     font-size: 32px;
 }
 
@@ -1079,6 +1081,8 @@ footer .inst .image img {
     padding: 0 24px;
     display: flex;
     flex-wrap: wrap;
+    box-sizing: border-box;
+    justify-content: space-around;
 }
 
 .services .blocks .item {
@@ -1224,7 +1228,6 @@ footer .inst .image img {
 }
 
 .spec-services .content .item .image {
-    height: 250px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -2017,6 +2020,60 @@ section.statistic .container {
     footer .about {
         padding-left: 48px;
     }
+
+    .delectus .item {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .delectus .item:nth-child(2n) {
+        flex-direction: row;
+    }
+
+    .delectus .item .number {
+        margin: 0 60px 24px;
+    }
+
+    .spec-services .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .spec-services .content .item {
+        width: 60%;
+        box-sizing: border-box;
+        margin-top: 48px;
+    }
+
+    .about .content {
+        flex-wrap: wrap;
+    }
+
+    .about .content .images {
+        width: 100%;
+    }
+
+    .about .content .text {
+        width: 100%;
+        margin-top: 24px;
+    }
+
+    .counter .items .item {
+        min-width: fit-content;
+    }
+
+    section.statistic .container {
+        flex-wrap: wrap;
+    }
+
+    .statistic .container>div {
+        width: 100%;
+        margin: 0 15px;
+    }
+
+    .statistic .bars .bar{
+        margin:0;
+    }
 }
 
 
@@ -2053,6 +2110,42 @@ section.statistic .container {
     
     .contacts .item-left>div.search {
         display: flex;
+    }
+
+    .services .blocks .item {
+        width: calc((100% - 48px) / 2);
+    }
+
+    .about .content .text {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .counter .container .items {
+        flex-wrap: wrap;
+    }
+
+    section.counter {
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .counter .items .item {
+        width: 50%;
+        box-sizing: border-box;
+        margin: 36px 0;
+    }
+
+    .counter .container {
+        padding: 0;
+    }
+
+    .counter .items .item .number {
+        font-size: 32px;
+    }
+
+    .counter .items .item p {
+        font-size: 16px;
     }
 }
 
@@ -2102,6 +2195,18 @@ section.statistic .container {
     .features .right .name {
         margin: 20px auto 10px;
         text-align: center;
+    }
+
+    .delectus .item .number {
+        margin: 0 30px 24px
+    }
+
+    .spec-services .content .item {
+        width: 100%;
+    }
+
+    .gphoto img{
+        width: 200%;
     }
 }
 
@@ -2176,6 +2281,23 @@ section.statistic .container {
     .testimonials .pickers {
         padding: 0;
     }
+
+    .services .blocks .item {
+        width: 100%;
+    }
+
+    .about .content .w50 {
+        width: 100%;
+        padding-top: 30px;
+    }
+
+    .about .content .images {
+        padding-top: 0;
+    }
+
+    section.statistic .container {
+        padding: 48px 0;
+    }
 }
 
 @media all and (max-width:420px) {
@@ -2231,6 +2353,40 @@ section.statistic .container {
 
     .nav-bar .container {
         padding: 0;
+    }
+
+    .spec-services .animate-btn {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .border-header .header .desc {
+        padding: 12px;
+    }
+
+    .delectus .item {
+        padding: 0;
+    }
+
+    .delectus .item .text {
+        padding: 12px;
+    }
+
+    .delectus .item .circle span {
+        font-size: 16px;
+    }
+
+    .delectus .item .circle {
+        height: 48px;
+        width: 48px;
+    }
+
+    .delectus .item .number {
+        margin-right: 0;
+    }
+
+    .counter .items .item .number {
+        font-size: 24px;
     }
 }
 
