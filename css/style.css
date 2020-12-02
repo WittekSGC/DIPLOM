@@ -2074,6 +2074,20 @@ section.statistic .container {
     .statistic .bars .bar{
         margin:0;
     }
+
+    .mail .contact {
+        flex-direction: column;
+    }
+
+    .mail .left,
+    .mail .right {
+        width: 100%;
+    }
+
+    .mail .map-container {
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
 }
 
 
@@ -2133,11 +2147,11 @@ section.statistic .container {
     .counter .items .item {
         width: 50%;
         box-sizing: border-box;
-        margin: 36px 0;
+        margin-top: 36px;
     }
 
     .counter .container {
-        padding: 0;
+        padding: 0 0 30px;
     }
 
     .counter .items .item .number {
@@ -2146,6 +2160,11 @@ section.statistic .container {
 
     .counter .items .item p {
         font-size: 16px;
+    }
+
+    .mail .contact form .w50 {
+        width: 100%;
+
     }
 }
 
@@ -2207,6 +2226,18 @@ section.statistic .container {
 
     .gphoto img{
         width: 200%;
+    }
+
+    .statistic .text p {
+        margin: 14px 0 14px;
+    }
+
+    .statistic .text ol li {
+        margin-bottom: 14px;
+    }
+
+    .counter .items .item .number {
+        margin: 10px 0 5px;
     }
 }
 
@@ -2298,6 +2329,15 @@ section.statistic .container {
     section.statistic .container {
         padding: 48px 0;
     }
+
+    .mail .contact form .buttons {
+        flex-direction: column;
+    }
+
+    .mail .contact form .btn {
+        width: 100%;
+        margin-top: 12px;
+    }
 }
 
 @media all and (max-width:420px) {
@@ -2387,6 +2427,28 @@ section.statistic .container {
 
     .counter .items .item .number {
         font-size: 24px;
+    }
+
+    .contacts * {
+        font-size: 12px;
+    }
+}
+
+@media all and (max-width:360px) {
+    .border-header {
+        padding: 24px 0;
+    }
+
+    .border-header .header .title {
+        font-size: 28px;
+    }
+
+    .border-header .header .desc {
+        font-size: 14px;
+    }
+
+    .counter .items .item p {
+        font-size: 14px;
     }
 }
 
