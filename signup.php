@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/8210b99a89.js" crossorigin="anonymous"></script>
-    <title>Login</title>
+    <title>Sign Up</title>
 </head>
 
 <body>

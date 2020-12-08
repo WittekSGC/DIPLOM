@@ -216,6 +216,9 @@ form .p10 {
 /*CONTACTS***************************************************/
 .contacts {
     background-color: #FF9900;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
 }
 
 .contacts * {    
@@ -354,6 +357,7 @@ form .p10 {
 .nav-bar .container {
     display: flex;
     justify-content: space-between;
+    align-content: center;
 }
 
 /*links*/
@@ -1874,6 +1878,7 @@ section.statistic .container {
 .single .reply form .left input {
     width:100%;
     padding: 10px;
+    box-sizing: border-box;
 }
 
 .single .reply form .left input:last-child {
@@ -1898,10 +1903,13 @@ section.statistic .container {
     height: 100%;
     resize: none;
     margin-bottom: 0;
+    padding: 8px 10px;
+    box-sizing: border-box;
 }
 
 .single .reply form .send-btn {
     width:30%;
+    min-width: fit-content;
     padding: 10px 0;
     margin-top: 32px;
     background-color: #FF9900;
@@ -2153,6 +2161,33 @@ section.statistic .container {
         padding: 0 15px;
         box-sizing: border-box;
     }
+
+    .single .container {
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .single .left {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .single .right {
+        width: 100%;
+    }
+
+    .single .reply form {
+        width: 100%;
+    }
+
+    .single .comments .com-item p {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .login .loginForm {
+        width:75%;  
+    }
 }
 
 
@@ -2231,6 +2266,43 @@ section.statistic .container {
         width: 100%;
 
     }
+
+    .single .right .content-row {
+        flex-direction: column;
+    }
+
+    .single .right .content-row .text,
+    .single .right .content-row img,
+    .single .right .content-row .left,
+    .single .right .content-row .right{
+        width: 100%;
+    }
+
+    .single .right .content-row span {
+        margin-bottom: 14px;
+    }
+
+    .single .reply form .col {
+        width: 100%;
+        box-sizing: border-box;
+        padding-right: 0;
+    }
+
+    .single form textarea {
+        margin: 14px 0;
+    }
+
+    .single .reply form .send-btn {
+        width: 100%;
+    }
+
+    .single .reply form .cols {
+        flex-direction: column;
+    }
+
+    .single .right .content-row .right p {
+        margin-top: 14px;
+    }
 }
 
 @media all and (max-width:572px) {
@@ -2303,6 +2375,33 @@ section.statistic .container {
 
     .counter .items .item .number {
         margin: 10px 0 5px;
+    }
+
+    .single .meta-info {
+        flex-wrap: wrap;
+    }
+
+    .single .comments .img {
+        min-width: fit-content;
+        margin-right: 14px;
+    }
+
+    .single .comments .img,
+    .single .comments .img img {
+        width: 60px;
+    }
+
+    .single .comments .img img {
+        height: auto;
+    }
+
+    .single .post {
+        margin-bottom: 24px;
+    }
+
+    .single .comments,
+    .single .container {
+        margin: 48px 0;
     }
 }
 
@@ -2403,6 +2502,22 @@ section.statistic .container {
         width: 100%;
         margin-top: 12px;
     }
+
+    .single .left {
+        width:100%;
+    }
+
+    .single .right h3 {
+        font-size: 20px;
+    }
+    
+    .single .reply form *  {
+        font-size: 14px;
+    }
+
+    .login .loginForm {
+        width: 95%;
+    }
 }
 
 @media all and (max-width:420px) {
@@ -2497,6 +2612,10 @@ section.statistic .container {
     .contacts * {
         font-size: 12px;
     }
+
+    .single .recents .item .name {
+        font-size: 14px;
+    }
 }
 
 @media all and (max-width:360px) {
@@ -2514,6 +2633,10 @@ section.statistic .container {
 
     .counter .items .item p {
         font-size: 14px;
+    }
+
+    .single .p-lr-15 {
+        padding: 0;
     }
 }
 
