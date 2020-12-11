@@ -68,10 +68,7 @@
     <section class="nav-bar center">
         <div class="container">
             <div class="logo">
-                <!--img-->
-                <a href="">
-                    TRUC<span>K</span>AGE
-                </a>
+                <img src="img/Logo-WB.png" alt="">
             </div>
             <ul class="links">
                 <li>
@@ -147,14 +144,13 @@
     <footer>
         <div class="container">
             <div class="item about w25">
-                <h4 class="title">About us</h4>
-                <p class="text">Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus.</p>
-                <div class="logo">
-                    <a href="">
-                        TRUC<span>K</span>AGE
-                    </a>
+                <div class="item about w25">
+                    <h4 class="title">About us</h4>
+                    <div class="white-logo">
+                        <img src="img/Logo-BB.png" alt="">
+                    </div>
+                    <p class="text">Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus.</p>
                 </div>
-            </div>
             <div class="item links w15">
                 <h4 class="title">Links</h4>
                 <div class="list">

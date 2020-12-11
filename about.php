@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/8210b99a89.js" crossorigin="anonymous"></script>
     <title>About us</title>
 </head>
@@ -66,10 +66,7 @@
    <section class="nav-bar center">
        <div class="container">
            <div class="logo">
-               <!--img-->
-               <a href="">
-                   TRUC<span>K</span>AGE
-               </a>
+               <img src="img/Logo-WB.png" alt="">
            </div>
            <ul class="links">
                <li>
@@ -96,7 +93,7 @@
     
     <!--GREATHER PHOTO-->
     <section class="gphoto">
-        <img src="../img/12.jpg" alt="">
+        <img src="img/12.jpg" alt="">
     </section>
     <!-------------------------------------------------->
     
@@ -126,9 +123,9 @@
             </div>
             <div class="content">
                 <div class="images w50">                       
-                    <img src="../img/6.jpg" alt="" class="w50">
-                    <img src="../img/7.jpg" alt="" class="w50">
-                    <img src="../img/banner.jpg" alt="" class="w100">
+                    <img src="img/6.jpg" alt="" class="w50">
+                    <img src="img/7.jpg" alt="" class="w50">
+                    <img src="img/banner.jpg" alt="" class="w100">
                 </div>
                 <div class="text w50">
                     <h3 class="title">
@@ -241,12 +238,10 @@
         <div class="container">
             <div class="item about w25">
                 <h4 class="title">About us</h4>
-                <p class="text">Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus.</p>
-                <div class="logo">
-                    <a href="">
-                         TRUC<span>K</span>AGE   
-                    </a>       
+                <div class="white-logo">
+                    <img src="img/Logo-BB.png" alt="">
                 </div>
+                <p class="text">Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus.</p>
             </div>
             <div class="item links w15">
                 <h4 class="title">Links</h4>
@@ -273,7 +268,7 @@
                             Ut aut reiciendis voluptatibus maiores alias, ut aut reiciendis.
 						</div>
                         <div class="info">
-                            <img src="../img/twitter.png" alt="" class="twit-logo">
+                            <img src="img/twitter.png" alt="" class="twit-logo">
                             <p class="date">02 days ago</p>
                         </div>                        
                     </div>
@@ -282,7 +277,7 @@
                             Ut aut reiciendis voluptatibus maiores alias, ut aut reiciendis.
 						</div>
                         <div class="info">
-                            <img src="../img/twitter.png" alt="" class="twit-logo">
+                            <img src="img/twitter.png" alt="" class="twit-logo">
                             <p class="date">02 days ago</p>
                         </div>                        
                     </div>
@@ -293,32 +288,32 @@
                 <div class="images">
                     <div class="image">
                         <a href="">
-                            <img src="../img/6.jpg" alt="">
+                            <img src="img/6.jpg" alt="">
                         </a>
                     </div>
                     <div class="image">
                         <a href="">
-                            <img src="../img/7.jpg" alt="">
+                            <img src="img/7.jpg" alt="">
                         </a>
                     </div>
                     <div class="image">
                         <a href="">
-                            <img src="../img/8.jpg" alt="">
+                            <img src="img/8.jpg" alt="">
                         </a>
                     </div>
                     <div class="image">
                         <a href="">
-                            <img src="../img/9.jpg" alt="">
+                            <img src="img/9.jpg" alt="">
                         </a>
                     </div>
                     <div class="image">
                         <a href="">
-                            <img src="../img/10.jpg" alt="">
+                            <img src="img/10.jpg" alt="">
                         </a>
                     </div>
                     <div class="image">
                         <a href="">
-                            <img src="../img/11.jpg" alt="">
+                            <img src="img/11.jpg" alt="">
                         </a>
                     </div>
                 </div>
@@ -339,22 +334,22 @@
             <div class="share">
                 <div class="social">
                     <a href="">
-                        <img src="../img/facebook.png" alt="">
+                        <img src="img/facebook.png" alt="">
                     </a>
                 </div>
                 <div class="social">
                     <a href="">
-                        <img src="../img/instagram.png" alt="">
+                        <img src="img/instagram.png" alt="">
                     </a>
                 </div>
                 <div class="social">
                     <a href="">
-                        <img src="../img/twitter-white.png" alt="">
+                        <img src="img/twitter-white.png" alt="">
                     </a>
                 </div>
                 <div class="social">
                     <a href="">
-                        <img src="../img/pinterest.png" alt="">
+                        <img src="img/pinterest.png" alt="">
                     </a>
                 </div>
             </div>

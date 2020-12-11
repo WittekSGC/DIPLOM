@@ -351,13 +351,30 @@ form .p10 {
 
 /*NAV-BAR****************************************************/
 .nav-bar {
-    padding: 24px 0;
+    padding: 12px 0;
 }
 
 .nav-bar .container {
     display: flex;
     justify-content: space-between;
     align-content: center;
+}
+
+.nav-bar .logo {
+    border: 2px solid #000;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.nav-bar .logo img{
+    height: 100%;
+    display: block;
+}
+
+.nav-bar .logo {
+    height: 80px;
+    width: auto;
+    border-radius: 4px;
 }
 
 /*links*/
@@ -391,7 +408,7 @@ form .p10 {
 .nav-bar .toggle-button {
     width: 40px;
     height: 40px;
-    margin: 8px;
+    margin: auto 8px;
     padding: 8px;
     border-radius: 4px;
     border: 1px solid #000;
@@ -965,10 +982,14 @@ footer .about .text {
     font-size: 14px;
 }
 
-footer .about .logo a{
-    font-size: 36px;
-    line-height: 3em;
-    color: #ffffff;
+footer .about .white-logo {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 8px;
+}
+
+footer .about .white-logo img{
+    width: 100%;
 }
 
 footer .links {
@@ -2403,6 +2424,10 @@ section.statistic .container {
     .single .container {
         margin: 48px 0;
     }
+
+    .nav-bar .logo {
+        height: 56px;
+    }
 }
 
 @media all and (max-width:520px) {
@@ -2463,10 +2488,6 @@ section.statistic .container {
 
     .logo a {
         font-size: 36px;
-    }
-
-    .nav-bar .toggle-button {
-        margin: 0;
     }
 
     .nav-bar {
